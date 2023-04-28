@@ -5,11 +5,12 @@
 //  Created by Amer Alyusuf on 4/1/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct HourlyTemperature: Identifiable {
     let time: Date
-//    let icon: Double
+    let symbolName: String
     let temperature: Double
+    let cloudCover: Double
     let id: String
 }

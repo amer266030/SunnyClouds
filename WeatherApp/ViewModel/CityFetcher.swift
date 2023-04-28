@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ReadData: ObservableObject  {
+class CityFetcher: ObservableObject  {
     @Published var cities = [City]()
     @Published var filteredCities = [City]()
         

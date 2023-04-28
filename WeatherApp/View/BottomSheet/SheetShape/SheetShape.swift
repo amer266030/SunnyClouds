@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyCustomShape: Shape {
+struct SheetShape: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
         let width = rect.size.width
@@ -25,8 +25,8 @@ struct MyCustomShape: Shape {
     }
 }
 
-//struct SheetShape_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SheetShape()
-//    }
-//}
+struct SheetShape_Previews: PreviewProvider {
+    static var previews: some View {
+        SheetShape()
+    }
+}

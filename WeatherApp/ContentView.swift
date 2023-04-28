@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var nav = NavigationManager.shared
+    
     var body: some View {
-        HomeView()
-//        CityChoose()
+        if nav.showCityChoose {
+            CityChoose()
+        } else {
+            HomeView()
+        }
     }
 }
 

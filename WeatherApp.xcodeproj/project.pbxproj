@@ -15,16 +15,26 @@
 		481A8AB029D737900045F376 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481A8AAF29D737900045F376 /* HomeView.swift */; };
 		481A8AB229D73F500045F376 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481A8AB129D73F500045F376 /* Constants.swift */; };
 		481A8AB429D78B7B0045F376 /* SheetShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481A8AB329D78B7B0045F376 /* SheetShape.swift */; };
-		487634EE29D8488300A471D7 /* SunsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634ED29D8488300A471D7 /* SunsetView.swift */; };
+		487634EE29D8488300A471D7 /* SunsetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634ED29D8488300A471D7 /* SunsetCellView.swift */; };
 		487634F029D84B9B00A471D7 /* HourlyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634EF29D84B9B00A471D7 /* HourlyForecastView.swift */; };
 		487634F229D84C1A00A471D7 /* HomeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634F129D84C1A00A471D7 /* HomeSheetView.swift */; };
 		487634F429D857EB00A471D7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634F329D857EB00A471D7 /* City.swift */; };
 		487634F629D8580E00A471D7 /* CityChoose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634F529D8580E00A471D7 /* CityChoose.swift */; };
 		487634FA29D859D900A471D7 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 487634F929D859D900A471D7 /* cities.json */; };
-		487634FC29D85B1800A471D7 /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634FB29D85B1800A471D7 /* ReadData.swift */; };
+		487634FC29D85B1800A471D7 /* CityFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634FB29D85B1800A471D7 /* CityFetcher.swift */; };
 		487634FE29D86C3500A471D7 /* DailyTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634FD29D86C3500A471D7 /* DailyTemperature.swift */; };
 		4876350029D86C6800A471D7 /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487634FF29D86C6800A471D7 /* WeatherFetcher.swift */; };
 		4876350229D8768600A471D7 /* HourlyTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876350129D8768600A471D7 /* HourlyTemperature.swift */; };
+		4D94FC0829FAA3A2007FC6FB /* UVIndexCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC0729FAA3A2007FC6FB /* UVIndexCellView.swift */; };
+		4D94FC0A29FAA669007FC6FB /* DailyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC0929FAA669007FC6FB /* DailyForecastView.swift */; };
+		4D94FC1029FAB0A7007FC6FB /* DynamicStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC0F29FAB0A7007FC6FB /* DynamicStack.swift */; };
+		4D94FC1229FAB0EE007FC6FB /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC1129FAB0EE007FC6FB /* NavigationManager.swift */; };
+		4D94FC1429FAB6D9007FC6FB /* SheetShape2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC1329FAB6D9007FC6FB /* SheetShape2.swift */; };
+		4D94FC1929FAD3F1007FC6FB /* ArcPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC1829FAD3F1007FC6FB /* ArcPlaceholderView.swift */; };
+		4D94FC1B29FAD3FB007FC6FB /* ArcReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC1A29FAD3FB007FC6FB /* ArcReadingView.swift */; };
+		4D94FC1D29FAD406007FC6FB /* ArcSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC1C29FAD406007FC6FB /* ArcSliderView.swift */; };
+		4D94FC1F29FADFAC007FC6FB /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC1E29FADFAC007FC6FB /* SummaryView.swift */; };
+		4D94FC2129FAE5EF007FC6FB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94FC2029FAE5EF007FC6FB /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,16 +49,26 @@
 		481A8AAF29D737900045F376 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		481A8AB129D73F500045F376 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		481A8AB329D78B7B0045F376 /* SheetShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetShape.swift; sourceTree = "<group>"; };
-		487634ED29D8488300A471D7 /* SunsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunsetView.swift; sourceTree = "<group>"; };
+		487634ED29D8488300A471D7 /* SunsetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunsetCellView.swift; sourceTree = "<group>"; };
 		487634EF29D84B9B00A471D7 /* HourlyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastView.swift; sourceTree = "<group>"; };
 		487634F129D84C1A00A471D7 /* HomeSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSheetView.swift; sourceTree = "<group>"; };
 		487634F329D857EB00A471D7 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		487634F529D8580E00A471D7 /* CityChoose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChoose.swift; sourceTree = "<group>"; };
 		487634F929D859D900A471D7 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
-		487634FB29D85B1800A471D7 /* ReadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
+		487634FB29D85B1800A471D7 /* CityFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFetcher.swift; sourceTree = "<group>"; };
 		487634FD29D86C3500A471D7 /* DailyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperature.swift; sourceTree = "<group>"; };
 		487634FF29D86C6800A471D7 /* WeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
 		4876350129D8768600A471D7 /* HourlyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyTemperature.swift; sourceTree = "<group>"; };
+		4D94FC0729FAA3A2007FC6FB /* UVIndexCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVIndexCellView.swift; sourceTree = "<group>"; };
+		4D94FC0929FAA669007FC6FB /* DailyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastView.swift; sourceTree = "<group>"; };
+		4D94FC0F29FAB0A7007FC6FB /* DynamicStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStack.swift; sourceTree = "<group>"; };
+		4D94FC1129FAB0EE007FC6FB /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		4D94FC1329FAB6D9007FC6FB /* SheetShape2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetShape2.swift; sourceTree = "<group>"; };
+		4D94FC1829FAD3F1007FC6FB /* ArcPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcPlaceholderView.swift; sourceTree = "<group>"; };
+		4D94FC1A29FAD3FB007FC6FB /* ArcReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcReadingView.swift; sourceTree = "<group>"; };
+		4D94FC1C29FAD406007FC6FB /* ArcSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSliderView.swift; sourceTree = "<group>"; };
+		4D94FC1E29FADFAC007FC6FB /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		4D94FC2029FAE5EF007FC6FB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +107,7 @@
 				481A8AA929D71D440045F376 /* View */,
 				481A8AA829D71D3C0045F376 /* Model */,
 				487634F729D858E700A471D7 /* Resources */,
+				4D94FC0E29FAB094007FC6FB /* Extensions */,
 				481A8AB129D73F500045F376 /* Constants.swift */,
 				481A8A9A29D71D260045F376 /* WeatherAppApp.swift */,
 				481A8A9C29D71D260045F376 /* ContentView.swift */,
@@ -118,11 +139,13 @@
 			isa = PBXGroup;
 			children = (
 				481A8AAF29D737900045F376 /* HomeView.swift */,
-				481A8AB329D78B7B0045F376 /* SheetShape.swift */,
-				487634ED29D8488300A471D7 /* SunsetView.swift */,
-				487634EF29D84B9B00A471D7 /* HourlyForecastView.swift */,
-				487634F129D84C1A00A471D7 /* HomeSheetView.swift */,
 				487634F529D8580E00A471D7 /* CityChoose.swift */,
+				487634EF29D84B9B00A471D7 /* HourlyForecastView.swift */,
+				4D94FC0929FAA669007FC6FB /* DailyForecastView.swift */,
+				4D94FC0629FAA336007FC6FB /* BottomSheet */,
+				4D94FC1729FAD3DD007FC6FB /* ArcSun */,
+				4D94FC1E29FADFAC007FC6FB /* SummaryView.swift */,
+				4D94FC2029FAE5EF007FC6FB /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,8 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				481A8AAB29D71D560045F376 /* LocationManager.swift */,
-				487634FB29D85B1800A471D7 /* ReadData.swift */,
+				487634FB29D85B1800A471D7 /* CityFetcher.swift */,
 				487634FF29D86C6800A471D7 /* WeatherFetcher.swift */,
+				4D94FC1129FAB0EE007FC6FB /* NavigationManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -143,6 +167,52 @@
 				487634F929D859D900A471D7 /* cities.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D94FC0629FAA336007FC6FB /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				4D94FC1529FAC0D7007FC6FB /* SheetShape */,
+				487634F129D84C1A00A471D7 /* HomeSheetView.swift */,
+				4D94FC1629FAC0F0007FC6FB /* Cells */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		4D94FC0E29FAB094007FC6FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D94FC0F29FAB0A7007FC6FB /* DynamicStack.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D94FC1529FAC0D7007FC6FB /* SheetShape */ = {
+			isa = PBXGroup;
+			children = (
+				481A8AB329D78B7B0045F376 /* SheetShape.swift */,
+				4D94FC1329FAB6D9007FC6FB /* SheetShape2.swift */,
+			);
+			path = SheetShape;
+			sourceTree = "<group>";
+		};
+		4D94FC1629FAC0F0007FC6FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				487634ED29D8488300A471D7 /* SunsetCellView.swift */,
+				4D94FC0729FAA3A2007FC6FB /* UVIndexCellView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4D94FC1729FAD3DD007FC6FB /* ArcSun */ = {
+			isa = PBXGroup;
+			children = (
+				4D94FC1C29FAD406007FC6FB /* ArcSliderView.swift */,
+				4D94FC1829FAD3F1007FC6FB /* ArcPlaceholderView.swift */,
+				4D94FC1A29FAD3FB007FC6FB /* ArcReadingView.swift */,
+			);
+			path = ArcSun;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,18 +287,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				4876350029D86C6800A471D7 /* WeatherFetcher.swift in Sources */,
+				4D94FC1929FAD3F1007FC6FB /* ArcPlaceholderView.swift in Sources */,
 				487634F029D84B9B00A471D7 /* HourlyForecastView.swift in Sources */,
-				487634EE29D8488300A471D7 /* SunsetView.swift in Sources */,
+				4D94FC1429FAB6D9007FC6FB /* SheetShape2.swift in Sources */,
+				4D94FC1029FAB0A7007FC6FB /* DynamicStack.swift in Sources */,
+				4D94FC1F29FADFAC007FC6FB /* SummaryView.swift in Sources */,
+				487634EE29D8488300A471D7 /* SunsetCellView.swift in Sources */,
 				4876350229D8768600A471D7 /* HourlyTemperature.swift in Sources */,
 				487634F229D84C1A00A471D7 /* HomeSheetView.swift in Sources */,
-				487634FC29D85B1800A471D7 /* ReadData.swift in Sources */,
+				487634FC29D85B1800A471D7 /* CityFetcher.swift in Sources */,
 				481A8AB229D73F500045F376 /* Constants.swift in Sources */,
+				4D94FC1B29FAD3FB007FC6FB /* ArcReadingView.swift in Sources */,
+				4D94FC2129FAE5EF007FC6FB /* MapView.swift in Sources */,
 				481A8A9D29D71D260045F376 /* ContentView.swift in Sources */,
 				481A8AB029D737900045F376 /* HomeView.swift in Sources */,
+				4D94FC1229FAB0EE007FC6FB /* NavigationManager.swift in Sources */,
 				487634F429D857EB00A471D7 /* City.swift in Sources */,
+				4D94FC1D29FAD406007FC6FB /* ArcSliderView.swift in Sources */,
 				487634F629D8580E00A471D7 /* CityChoose.swift in Sources */,
 				481A8AB429D78B7B0045F376 /* SheetShape.swift in Sources */,
+				4D94FC0A29FAA669007FC6FB /* DailyForecastView.swift in Sources */,
 				487634FE29D86C3500A471D7 /* DailyTemperature.swift in Sources */,
+				4D94FC0829FAA3A2007FC6FB /* UVIndexCellView.swift in Sources */,
 				481A8A9B29D71D260045F376 /* WeatherAppApp.swift in Sources */,
 				481A8AAC29D71D560045F376 /* LocationManager.swift in Sources */,
 			);
@@ -371,6 +451,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,6 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

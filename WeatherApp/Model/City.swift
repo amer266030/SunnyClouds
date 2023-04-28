@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 
 struct City: Codable, Identifiable {
     enum CodingKeys: CodingKey {
@@ -20,5 +21,9 @@ struct City: Codable, Identifiable {
     var name: String
     var lat: String
     var lng: String
+    
+    var region: MKCoordinateRegion {
+        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: Double(lat)!, longitude: Double(lng)!), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    }
 }
 

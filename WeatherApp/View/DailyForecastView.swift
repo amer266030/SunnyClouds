@@ -1,31 +1,30 @@
 //
-//  HourlyForecastView.swift
+//  DailyForecastView.swift
 //  WeatherApp
 //
-//  Created by Amer Alyusuf on 4/1/23.
+//  Created by Amer Alyusuf on 27/04/2023.
 //
 
 import SwiftUI
-import WeatherKit
 
-struct HourlyForecastView: View {
-    
+struct DailyForecastView: View {
     @ObservedObject var weatherFetcher = WeatherFetcher.shared
-    @Binding var hourWeatherList: [HourlyTemperature]
+    @Binding var dailyWeatherList: [DailyTemperature]
     
     var body: some View {
         GeometryReader { geo in
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 16) {
-                    ForEach(hourWeatherList) { hourWeatherItem in
+                    ForEach(dailyWeatherList) { dailyWeatherItem in
                         VStack {
-                            Text(hourWeatherItem.time.formatted(date: .omitted, time: .shortened))
-                            weatherFetcher.img(fromSF: hourWeatherItem.symbolName)
+                            Text("\(dailyWeatherItem.day.formatted(Date.FormatStyle().weekday(.abbreviated)))")
+                            weatherFetcher.img(fromSF: dailyWeatherItem.symbolName)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .padding()
                                 
-                            Text("\(hourWeatherItem.temperature.rounded().formatted())ºC")
+                            Text("L: \(dailyWeatherItem.min.rounded().formatted())")
+                            Text("H: \(dailyWeatherItem.max.rounded().formatted())")
                         }
                         .bold()
                         .padding(.horizontal, 4)
@@ -47,5 +46,11 @@ struct HourlyForecastView: View {
             }
             .padding(.horizontal)
         }
+    }
+}
+
+struct DailyForecastView_Previews: PreviewProvider {
+    static var previews: some View {
+        DailyForecastView(dailyWeatherList: .constant([DailyTemperature.init(day: Date.now, symbolName: "sun.max.fill", min: 12, max: 19, sunrise: Date.now, sunset: Date.now, uvIndex: 15, wind:0, id: "123")]))
     }
 }
