@@ -16,21 +16,29 @@ class CityFetcher: ObservableObject  {
     }
     
     func loadData()  {
-        guard let url = Bundle.main.url(forResource: "cities", withExtension: "json")
-            else {
-                print("Json file not found")
-                return
+        DispatchQueue.global().async {
+            let decodedData: [City] = Bundle.main.decode(file: "cities.json")
+            DispatchQueue.main.async {
+                self.cities = decodedData
             }
-        
-        let data = try? Data(contentsOf: url)
-        let cities = try? JSONDecoder().decode([City].self, from: data!)
-        self.cities = cities!
-        
+        }
     }
     
-    func filterBy(name: String = "") {
-        filteredCities = name.isEmpty ? [] : cities.filter
-        { $0.name.lowercased().contains(name.lowercased()) }
+    func filterBy(name: String = "", country: String = "") {
+        if !name.isEmpty && !country.isEmpty {
+            filteredCities = cities.filter
+            { $0.country.lowercased().contains(country.lowercased()) }
+                .filter {
+                    $0.name.lowercased().contains(name.lowercased())
+                }
+        }
+        else if !name.isEmpty {
+            filteredCities = cities.filter
+            { $0.name.lowercased().contains(name.lowercased()) }
+        }
+        else if !country.isEmpty {
+            filteredCities = cities.filter
+            { $0.country.lowercased().contains(country.lowercased()) }
+        }
     }
-     
 }

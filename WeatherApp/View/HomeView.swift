@@ -11,7 +11,7 @@ import CoreLocation
 
 struct HomeView: View {
     
-    @StateObject var locationManager = LocationManager()
+    @StateObject var locationManager = LocationManager.shared
     @StateObject var weatherFetcher = WeatherFetcher.shared
     @ObservedObject var nav = NavigationManager.shared
     
@@ -35,7 +35,7 @@ struct HomeView: View {
                                 Button {
                                     nav.showCityChoose.toggle()
                                 } label: {
-                                    Text("\(weatherFetcher.city.name)")
+                                    Text("\(weatherFetcher.city?.name ?? "City?")")
                                         .font(.largeTitle)
                                         .lineLimit(1)
                                         .minimumScaleFactor(0.5)
@@ -45,7 +45,7 @@ struct HomeView: View {
                                     Image.locationPin
                                         .opacity(0.5)
                                     
-                                    Text("\(weatherFetcher.city.country)")
+                                    Text("\(weatherFetcher.city?.country ?? "Country?")")
                                 }
                             }
                             .padding(.horizontal)
@@ -98,16 +98,35 @@ struct HomeView: View {
                             .padding(.top)
                     }
                 } else {
-                    Spacer()
-                    ProgressView()
-                        .task {
-                            await weatherFetcher.fetchDaily()
+                    VStack {
+                        Spacer()
+                        ProgressView()
+                            .task {
+                                await weatherFetcher.fetchDaily()
+                            }
+                        Text("Fetching Weather for Location")
+                            .padding()
+                        Spacer()
+                        Button {
+                            nav.showCityChoose.toggle()
+                        } label: {
+                            Text("\(weatherFetcher.city?.name ?? "Change City?")")
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.5)
+                                .padding()
                         }
-                    Spacer()
+                        .buttonStyle(.borderedProminent)
+                    }
+                    .padding()
                 }
             }
         }
         .foregroundColor(.white)
+        .onChange(of: weatherFetcher.city?.id) { _ in
+            Task {
+                await weatherFetcher.fetchDaily()
+            }
+        }
     }
 }
 
