@@ -25,11 +25,19 @@ class WeatherFetcher: ObservableObject {
         let weatherService = WeatherService()
         
         if city == nil {
-            do {
-                let locationManager = LocationManager.shared
-                city = try await locationManager.fetchLocation()
-            } catch {
-                return
+            let locationManager = LocationManager.shared
+            if locationManager.currentLocation != nil {
+                self.city = City(country: locationManager.countryName,
+                                                name: locationManager.cityName,
+                                                lat: "\(locationManager.currentLocation!.coordinate.latitude)",
+                                                lng: "\(locationManager.currentLocation!.coordinate.longitude)")
+            } else {
+                do {
+                    let locationManager = LocationManager.shared
+                    city = try await locationManager.fetchLocation()
+                } catch {
+                    return
+                }
             }
         }
         

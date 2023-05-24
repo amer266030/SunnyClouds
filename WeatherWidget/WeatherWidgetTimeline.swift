@@ -34,7 +34,7 @@ struct Provider: IntentTimelineProvider {
             await weatherFetcher.fetchDaily()
             DispatchQueue.main.async {
                 let entry = SimpleEntry(date: Date(), configuration: configuration, city: weatherFetcher.city, weather: weatherFetcher.weather, dailyTemp: weatherFetcher.dailyTemperatures)
-                let timeline = Timeline(entries: [entry], policy: .never)
+                let timeline = Timeline(entries: [entry], policy: .atEnd)
                 completion(timeline)
             }
         }

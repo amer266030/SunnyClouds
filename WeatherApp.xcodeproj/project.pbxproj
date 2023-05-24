@@ -54,6 +54,8 @@
 		4DB8C1942A1668EB005CDF59 /* WeatherWidgetTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8C1922A1668B9005CDF59 /* WeatherWidgetTimeline.swift */; };
 		4DB8C1962A166ABD005CDF59 /* Bundle_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8C1952A166ABD005CDF59 /* Bundle_ext.swift */; };
 		4DB8C1982A167A4A005CDF59 /* WeatherWidgetTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8C1922A1668B9005CDF59 /* WeatherWidgetTimeline.swift */; };
+		4DB9BBC82A1E0ADC006A274C /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9BBC42A1E09CE006A274C /* MediumWidgetView.swift */; };
+		4DB9BBC92A1E0ADF006A274C /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9BBC62A1E09DA006A274C /* SmallWidgetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		4D94FC2029FAE5EF007FC6FB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4DB8C1922A1668B9005CDF59 /* WeatherWidgetTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidgetTimeline.swift; sourceTree = "<group>"; };
 		4DB8C1952A166ABD005CDF59 /* Bundle_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle_ext.swift; sourceTree = "<group>"; };
+		4DB9BBC42A1E09CE006A274C /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		4DB9BBC62A1E09DA006A274C /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,8 +254,10 @@
 			isa = PBXGroup;
 			children = (
 				4D589BE82A16098A00154A38 /* WeatherWidgetBundle.swift */,
-				4D589BEA2A16098A00154A38 /* WeatherWidget.swift */,
 				4DB8C1922A1668B9005CDF59 /* WeatherWidgetTimeline.swift */,
+				4D589BEA2A16098A00154A38 /* WeatherWidget.swift */,
+				4DB9BBC62A1E09DA006A274C /* SmallWidgetView.swift */,
+				4DB9BBC42A1E09CE006A274C /* MediumWidgetView.swift */,
 				4D589BFB2A160F5200154A38 /* InfoCardView.swift */,
 				4D589BEC2A16098A00154A38 /* WeatherWidget.intentdefinition */,
 				4D589BED2A16098C00154A38 /* Assets.xcassets */,
@@ -446,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D589C002A1620EB00154A38 /* WeatherFetcher.swift in Sources */,
+				4DB9BBC92A1E0ADF006A274C /* SmallWidgetView.swift in Sources */,
 				4D589BFE2A161FD900154A38 /* DailyTemperature.swift in Sources */,
 				4DB8C1942A1668EB005CDF59 /* WeatherWidgetTimeline.swift in Sources */,
 				4D589C012A16227F00154A38 /* City.swift in Sources */,
@@ -454,6 +461,7 @@
 				4D589BE92A16098A00154A38 /* WeatherWidgetBundle.swift in Sources */,
 				4D589BFF2A1620E300154A38 /* LocationManager.swift in Sources */,
 				4D589BF02A16098C00154A38 /* WeatherWidget.intentdefinition in Sources */,
+				4DB9BBC82A1E0ADC006A274C /* MediumWidgetView.swift in Sources */,
 				4D589BFD2A160FAC00154A38 /* InfoCardView.swift in Sources */,
 				4D589BFA2A160AF700154A38 /* Constants.swift in Sources */,
 			);

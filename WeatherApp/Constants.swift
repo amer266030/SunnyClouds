@@ -10,6 +10,7 @@ import SwiftUI
 extension Color {
     static let saphhire = Color("sapphire")
     static let periwinkle = Color("periwinkle")
+    static let Kakitsubata = Color("Kakitsubata")
 }
 
 extension Image {
